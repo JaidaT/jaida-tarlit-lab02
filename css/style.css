@@ -1,0 +1,47 @@
+.page-footer {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  height: 795px;
+  background-color: rgb(190, 232, 232);
+  grid-template-areas: 
+  "bio bio bio bio"
+  "about social-media mastodon socials"
+  "about social-media mastodon socials";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1.3fr 0.7fr;
+}
+
+.page-footer > .page-footer-section__bio {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: bio;
+}
+
+.page-footer > .page-footer-section__about {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: about;
+}
+
+.page-footer > .page-footer-section__social-media {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: social-media;
+  
+}
+
+.page-footer > .page-footer-section__mastodon {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: mastodon;
+  
+}
+
+.page-footer > .page-footer-section__socials {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: socials;
+  
+}
+
