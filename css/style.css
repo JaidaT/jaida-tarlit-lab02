@@ -1,0 +1,65 @@
+.page-content {
+    display: grid;
+    grid-template-columns: 209px 1fr 209px;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+}
+
+/*intro*/
+.page-section__intro {
+    grid-column: 2 / 3;
+    display: grid;
+}
+
+.text-highlight--light-blue {
+    color: rgba(30, 175, 222, 1);
+}
+
+.page-section-header {
+    place-self: center;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+/*services*/
+.page-section__services {
+    grid-column: 2 / 3;
+}
+
+.page-section__services-inner {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+}
+
+.service {
+    text-align: center;
+}
+
+.service-desc {
+    text-align: left;
+}
+
+/*blog*/
+
+.page-section__blog {
+    grid-column: 2 / 3;
+    display: grid;
+}
+
+/*portfolio*/
+.page-section__portfolio {
+    grid-column: 2 / 3;
+    display: grid;
+}
+
+/*clients*/
+.page-section__clients {
+    grid-column: 2 / 3;
+    display: grid;
+}
