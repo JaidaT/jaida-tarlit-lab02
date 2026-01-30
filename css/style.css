@@ -45,3 +45,34 @@
   
 }
 
+.page-footer-section__bio-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
+}
+
+.page-footer-section__about-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
+}
+
+.page-footer-section__social-media-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
+}
+
+.page-footer-section__mastodon-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
+}
+
+.page-footer-section__socials-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
+}
+
+/* ----------- FOR DEV PURPOSES ----------- */
