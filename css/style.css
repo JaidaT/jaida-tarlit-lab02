@@ -1,115 +1,109 @@
-.page-footer {
-  display: grid;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  /* height: 795px; */
-  background-color: rgb(190, 232, 232);
-  grid-template-areas: 
-  "bio bio bio bio"
-  "about social-media mastodon socials"
-  "about social-media mastodon socials";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1.3fr 0.7fr;
-  box-sizing: border-box;
+/* ---------------------------- HEADER ---------------------------- */
+
+.page-header{
+  background-color: whitesmoke;
+  display:grid;
+  grid-template-rows: 1fr;
+  height : 100%;
+  width: auto;
+  gap: 20px;
 }
 
-/* --------------- Bio --------------- */
-.page-footer > .page-footer-section__bio {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: bio;
+.page-header__logo{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  font-size: 36px;
+  font-weight: bold;
+
 }
 
-.page-footer-section__bio-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  box-sizing: border-box;
-  margin: 10px;
-  height: 90%;
-  width: 65%;
-  grid-template-columns: 120px auto;
+.page-header__inner{ 
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-.page-footer-divider{
-  position: absolute;
-  border: none;
-  height: 3px;
-  background-color: black;
-  width: 50%;
-  z-index: 5;
-  margin-top: 17.5rem;
+.page-header__nav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
 }
 
-/* --------------- About --------------- */
-.page-footer > .page-footer-section__about {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: about;
+.nav-button{
+    width: 100%;
+    text-align:center;
+    padding: 15px;
 }
 
-.page-footer-section__about-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  margin: 10px;
+.page-banner{
+    height: 40rem;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("https://placehold.co/1466x531");
 }
 
-/* --------------- Social Media (Instagram) --------------- */
-
-.page-footer > .page-footer-section__social-media {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: social-media;
-  
+.page-banner__flags{
+    margin-bottom: 16rem;
+    margin-left: 3rem;
 }
 
-.page-footer-section__social-media-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  margin: 10px;
+.page-banner__flag{
+    margin-top: 6px;
+    padding: 1rem;
+    list-style: none;
+    background-color: #ffffff;
+    
 }
 
-/* --------------- Mastodon --------------- */
-
-.page-footer > .page-footer-section__mastodon {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: mastodon;
-  font-size: 0.85rem;
+.page-banner__flag--dark-blue{
+    border-left: 4px solid darkblue;
 }
 
-.page-footer-section__mastodon-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  margin: 10px;
+.page-banner__flag--red{
+    border-left: 4px solid red;
 }
 
-/* --------------- Socials (Track us!) --------------- */
-
-.page-footer > .page-footer-section__socials {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: socials;
+.page-banner__flag--yellow{
+    border-left: 4px solid yellow;
 }
 
-.page-footer-section__socials-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  margin: 10px;
+.nav-button{
+    border: none;
+    padding-top: 30px;
 }
 
-
-
-
-
-/* ----------- FOR DEV PURPOSES ----------- */
-.page-content {
-    display: grid;
-    grid-template-columns: 209px 1fr 209px;
-    grid-template-rows: auto;
-    row-gap: 2rem;
+body{
+    margin: 0px;
+    padding: 0px;
 }
+
+.nav-button--green{
+    background-color: green;
+    color: white;
+}
+
+.nav-button--yellow{
+    background-color: yellow;
+    color: white;
+}
+.nav-button--red{
+    background-color: red;
+    color: white;
+}
+
+.nav-button--light-blue{
+    background-color: lightblue;
+    color: white;
+}
+
+.nav-button--dark-blue{
+    background-color: darkblue;
+    color: white;
+}
+
+/* ----------------------------- MAIN ----------------------------- */
 
 /*intro*/
 
@@ -234,7 +228,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
- /* //hi */
+}
+ 
 
  /* Container sizing */
 
@@ -242,105 +237,120 @@
     padding-left: 10rem;
     padding-right: 10rem;
  }
-.page-header{
-  background-color: whitesmoke;
-  display:grid;
-  grid-template-rows: 1fr;
-  height : 100%;
-  width: auto;
-  gap: 20px;
+
+
+
+/* ---------------------------- FOOTER ---------------------------- */
+.page-footer {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  /* height: 795px; */
+  background-color: rgb(190, 232, 232);
+  grid-template-areas: 
+  "bio bio bio bio"
+  "about social-media mastodon socials"
+  "about social-media mastodon socials";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1.3fr 0.7fr;
+  box-sizing: border-box;
 }
 
-.page-header__logo{
-  display: flex;
-  align-items: flex-end;
-  flex-direction: row;
-  font-size: 36px;
-  font-weight: bold;
-
+/* --------------- Bio --------------- */
+.page-footer > .page-footer-section__bio {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: bio;
 }
 
-.page-header__inner{ 
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-content: space-between;
+.page-footer-section__bio-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  box-sizing: border-box;
+  margin: 10px;
+  height: 90%;
+  width: 65%;
+  grid-template-columns: 120px auto;
 }
 
-.page-header__nav{
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
+.page-footer-divider{
+  position: absolute;
+  border: none;
+  height: 3px;
+  background-color: black;
+  width: 50%;
+  z-index: 5;
+  margin-top: 17.5rem;
 }
 
-.nav-button{
-    width: 100%;
-    text-align:center;
-    padding: 15px;
+/* --------------- About --------------- */
+.page-footer > .page-footer-section__about {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: about;
 }
 
-.page-banner{
-    height: 40rem;
-    display: flex;
-    align-items: flex-end;
-    background-image: url("https://placehold.co/1466x531");
+.page-footer-section__about-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
 }
 
-.page-banner__flags{
-    margin-bottom: 16rem;
-    margin-left: 3rem;
+/* --------------- Social Media (Instagram) --------------- */
+
+.page-footer > .page-footer-section__social-media {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: social-media;
+  
 }
 
-.page-banner__flag{
-    margin-top: 6px;
-    padding: 1rem;
-    list-style: none;
-    background-color: #ffffff;
-    
+.page-footer-section__social-media-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
 }
 
-.page-banner__flag--dark-blue{
-    border-left: 4px solid darkblue;
+/* --------------- Mastodon --------------- */
+
+.page-footer > .page-footer-section__mastodon {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: mastodon;
+  font-size: 0.85rem;
 }
 
-.page-banner__flag--red{
-    border-left: 4px solid red;
+.page-footer-section__mastodon-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
 }
 
-.page-banner__flag--yellow{
-    border-left: 4px solid yellow;
+/* --------------- Socials (Track us!) --------------- */
+
+.page-footer > .page-footer-section__socials {
+  background-color: rgb(235, 135, 135);
+  border: 1px solid black;
+  grid-area: socials;
 }
 
-.nav-button{
-    border: none;
-    padding-top: 30px;
+.page-footer-section__socials-inner{
+  background-color: rgb(202, 174, 227);
+  display: grid;
+  margin: 10px;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
+
+
+
+
+/* ----------- FOR DEV PURPOSES ----------- */
+.page-content {
+    display: grid;
+    grid-template-columns: 209px 1fr 209px;
+    grid-template-rows: auto;
+    row-gap: 2rem;
 }
 
-.nav-button--green{
-    background-color: green;
-    color: white;
-}
-
-.nav-button--yellow{
-    background-color: yellow;
-    color: white;
-}
-.nav-button--red{
-    background-color: red;
-    color: white;
-}
-
-.nav-button--light-blue{
-    background-color: lightblue;
-    color: white;
-}
-
-.nav-button--dark-blue{
-    background-color: darkblue;
-    color: white;
-}
