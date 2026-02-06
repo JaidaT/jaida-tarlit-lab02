@@ -1,373 +1,378 @@
-/* ---------------------------- HEADER ---------------------------- */
+/* Desktop */
+@media screen and (min-midth: 633px) {
+  /* ---------------------------- HEADER ---------------------------- */
 
-.page-header{
-  background-color: whitesmoke;
-  display:grid;
-  grid-template-rows: 1fr;
-  height : 100%;
-  width: auto;
-  gap: 20px;
-}
+  .page-header {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: auto;
+    gap: 20px;
+  }
 
-.page-header__logo{
-  display: flex;
-  align-items: flex-end;
-  flex-direction: row;
-  font-size: 36px;
-  font-weight: bold;
+  .page-header__logo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    font-size: 36px;
+    font-weight: bold;
+  }
 
-}
-
-.page-header__inner{ 
+  .page-header__inner {
     display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-content: space-between;
-}
+  }
 
-.page-header__nav{
+  .page-header__nav {
     display: flex;
     justify-content: space-between;
     width: 40%;
-}
+  }
 
-.nav-button{
+  .nav-button {
     width: 100%;
-    text-align:center;
+    text-align: center;
     padding: 15px;
-}
+  }
 
-.page-banner{
+  .page-banner {
     height: 40rem;
     display: flex;
     align-items: flex-end;
     background-image: url("https://placehold.co/1466x531");
-}
+  }
 
-.page-banner__flags{
+  .page-banner__flags {
     margin-bottom: 16rem;
     margin-left: 3rem;
-}
+  }
 
-.page-banner__flag{
+  .page-banner__flag {
     margin-top: 6px;
     padding: 1rem;
     list-style: none;
     background-color: #ffffff;
-    
-}
+  }
 
-.page-banner__flag--dark-blue{
+  .page-banner__flag--dark-blue {
     border-left: 4px solid darkblue;
-}
+  }
 
-.page-banner__flag--red{
+  .page-banner__flag--red {
     border-left: 4px solid red;
-}
+  }
 
-.page-banner__flag--yellow{
+  .page-banner__flag--yellow {
     border-left: 4px solid yellow;
-}
+  }
 
-.nav-button{
+  .nav-button {
     border: none;
     padding-top: 30px;
-}
+  }
 
-body{
+  body {
     margin: 0px;
     padding: 0px;
-}
+  }
 
-.nav-button--green{
+  .nav-button--green {
     background-color: green;
     color: white;
-}
+  }
 
-.nav-button--yellow{
+  .nav-button--yellow {
     background-color: yellow;
     color: white;
-}
-.nav-button--red{
+  }
+  .nav-button--red {
     background-color: red;
     color: white;
-}
+  }
 
-.nav-button--light-blue{
+  .nav-button--light-blue {
     background-color: lightblue;
     color: white;
-}
+  }
 
-.nav-button--dark-blue{
+  .nav-button--dark-blue {
     background-color: darkblue;
     color: white;
-}
+  }
 
-/* ----------------------------- MAIN ----------------------------- */
+  /* ----------------------------- MAIN ----------------------------- */
 
-/*intro*/
+  /*intro*/
 
-
-.text-highlight--light-blue {
+  .text-highlight--light-blue {
     color: rgba(30, 175, 222, 1);
-}
+  }
 
-.page-section-header {
+  .page-section-header {
     place-self: center;
     text-align: center;
     grid-column: 1 / -1;
-}
+  }
 
-.page-section {
+  .page-section {
     grid-column: 2 / 3;
-}
+  }
 
-/*services*/
+  /*services*/
 
-.page-section__services-inner {
+  .page-section__services-inner {
     display: grid;
     row-gap: 2rem;
-}
+  }
 
-.services {
+  .services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1rem;
-}
+  }
 
-.service {
+  .service {
     text-align: center;
-}
+  }
 
-.service-desc {
+  .service-desc {
     text-align: left;
-}
+  }
 
-/*blog*/
+  /*blog*/
 
-.page-section__blog-inner {
+  .page-section__blog-inner {
     display: grid;
     row-gap: 2rem;
-}
+  }
 
-.blog {
+  .blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
-}
+  }
 
-.blog-entry {
+  .blog-entry {
     position: relative;
-}
+  }
 
-.blog-entry-date {
+  .blog-entry-date {
     text-align: center;
     position: absolute;
     background-color: rgba(216, 96, 95, 1);
-    padding: .5rem;
-}
+    padding: 0.5rem;
+  }
 
-.blog-entry-heading,
-.blog-entry-tags {
+  .blog-entry-heading,
+  .blog-entry-tags {
     margin-top: 1rem;
     padding-bottom: 0%;
     margin-bottom: 0%;
-}
+  }
 
-.blog-entry-desc {
+  .blog-entry-desc {
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: rgba(25, 178, 222, 1);
     padding-left: 1rem;
-}
+  }
 
-.blog-entry__image {
+  .blog-entry__image {
     width: 100%;
-}
+  }
 
-.blog-entry__icon {
+  .blog-entry__icon {
     position: absolute;
     width: 1rem;
     height: 1rem;
     right: 1rem;
     align: auto;
     background-color: rgba(21, 150, 189, 1);
-}
+  }
 
+  /*portfolio*/
 
-/*portfolio*/
-
-.page-section__portfolio-inner {
+  .page-section__portfolio-inner {
     display: grid;
     row-gap: 2rem;
-}
+  }
 
-.projects {
+  .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
     row-gap: 3rem;
-}
+  }
 
-/*clients*/
+  /*clients*/
 
-.page-section__clients-inner {
+  .page-section__clients-inner {
     display: grid;
     row-gap: 2rem;
-}
+  }
 
-.client-list {
+  .client-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2rem;
-}
+  }
 
-.client {
+  .client {
     background-color: rgba(243, 243, 243, 1);
     display: flex;
     justify-content: center;
     align-items: center;
-}
- 
+  }
 
- /* Container sizing */
+  /* Container sizing */
 
- .page {
+  .page {
     padding-left: 10rem;
     padding-right: 10rem;
- }
+  }
 
-
-
-/* ---------------------------- FOOTER ---------------------------- */
-.page-footer__container{
-    background-color: rgb(190, 232, 232);
-}
-
-.page-footer {
-  display: grid;
-  margin: 0 auto;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  /* height: 795px; */
-  grid-template-areas: 
-  "bio bio bio bio"
-  "about social-media mastodon socials"
-  "about social-media mastodon socials";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1.3fr 0.7fr;
-  box-sizing: border-box;
-}
-
-/* --------------- Bio --------------- */
-.page-footer > .page-footer-section__bio {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: bio;
-}
-
-.page-footer-section__bio-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  box-sizing: border-box;
-  margin: 10px;
-  height: 90%;
-  width: 65%;
-  grid-template-columns: 120px auto;
-}
-
-.page-footer-divider{
-  position: absolute;
-  border: none;
-  height: 3px;
-  background-color: black;
-  width: 50%;
-  z-index: 5;
-  margin-top: 17.5rem;
-}
-
-/* --------------- About --------------- */
-.page-footer > .page-footer-section__about {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: about;
-}
-
-.page-footer-section__about-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  margin: 10px;
-}
-
-/* --------------- Social Media (Instagram) --------------- */
-
-.page-footer > .page-footer-section__social-media {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: social-media;
-  
-}
-
-.page-footer-section__social-media-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-auto-rows: 64px; */
-  margin: 10px;
-}
-
-
-
-.page-footer-section-heading {
-    grid-column: span 3;
-}
-
-.post,
-.social.media-post-link {
-    height: 64px;
-    width: 64px;
-    grid-column: 1;
-}
-
-/* --------------- Mastodon --------------- */
-
-.page-footer > .page-footer-section__mastodon {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: mastodon;
-  font-size: 0.85rem;
-}
-
-.page-footer-section__mastodon-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  margin: 10px;
-}
-
-/* --------------- Socials (Track us!) --------------- */
-
-.page-footer > .page-footer-section__socials {
-  background-color: rgb(235, 135, 135);
-  border: 1px solid black;
-  grid-area: socials;
-}
-
-.page-footer-section__socials-inner{
-  background-color: rgb(202, 174, 227);
-  display: grid;
-  margin: 10px;
-}
-
-
-
-
-
-/* ----------- FOR DEV PURPOSES ----------- */
-.page-content {
+  .page-content {
     display: grid;
     grid-template-columns: 209px 1fr 209px;
     grid-template-rows: auto;
     row-gap: 2rem;
+  }
+
+  /* ---------------------------- FOOTER ---------------------------- */
+  .page-footer__container {
+    background-color: rgb(190, 232, 232);
+  }
+
+  .page-footer {
+    display: grid;
+    margin: 0 auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    /* height: 795px; */
+    grid-template-areas:
+      "bio bio bio bio"
+      "about social-media mastodon socials"
+      "about social-media mastodon socials";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.3fr 0.7fr;
+    box-sizing: border-box;
+  }
+
+  /* --------------- Bio --------------- */
+  .page-footer > .page-footer-section__bio {
+    background-color: rgb(235, 135, 135);
+    border: 1px solid black;
+    grid-area: bio;
+  }
+
+  .page-footer-section__bio-inner {
+    background-color: rgb(202, 174, 227);
+    display: grid;
+    box-sizing: border-box;
+    margin: 10px;
+    height: 90%;
+    width: 65%;
+    grid-template-columns: 120px auto;
+  }
+
+  .page-footer-divider {
+    position: absolute;
+    border: none;
+    height: 3px;
+    background-color: black;
+    width: 50%;
+    z-index: 5;
+    margin-top: 17.5rem;
+  }
+
+  /* --------------- About --------------- */
+  .page-footer > .page-footer-section__about {
+    background-color: rgb(235, 135, 135);
+    border: 1px solid black;
+    grid-area: about;
+  }
+
+  .page-footer-section__about-inner {
+    background-color: rgb(202, 174, 227);
+    display: grid;
+    margin: 10px;
+  }
+
+  /* --------------- Social Media (Instagram) --------------- */
+
+  .page-footer > .page-footer-section__social-media {
+    background-color: rgb(235, 135, 135);
+    border: 1px solid black;
+    grid-area: social-media;
+  }
+
+  .page-footer-section__social-media-inner {
+    background-color: rgb(202, 174, 227);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows: 64px; */
+    margin: 10px;
+  }
+
+  .page-footer-section-heading {
+    grid-column: span 3;
+  }
+
+  .post,
+  .social.media-post-link {
+    height: 64px;
+    width: 64px;
+    grid-column: 1;
+  }
+
+  /* --------------- Mastodon --------------- */
+
+  .page-footer > .page-footer-section__mastodon {
+    background-color: rgb(235, 135, 135);
+    border: 1px solid black;
+    grid-area: mastodon;
+    font-size: 0.85rem;
+  }
+
+  .page-footer-section__mastodon-inner {
+    background-color: rgb(202, 174, 227);
+    display: grid;
+    margin: 10px;
+  }
+
+  /* --------------- Socials (Track us!) --------------- */
+
+  .page-footer > .page-footer-section__socials {
+    background-color: rgb(235, 135, 135);
+    border: 1px solid black;
+    grid-area: socials;
+  }
+
+  .page-footer-section__socials-inner {
+    background-color: rgb(202, 174, 227);
+    display: grid;
+    margin: 10px;
+  }
 }
 
+/* Tablet */
+@media screen and (min-width: 433) and (max-width: 632) {
+  /* ---------------------------- HEADER ---------------------------- */
+
+  /* ----------------------------- MAIN ----------------------------- */
+
+  /* ---------------------------- FOOTER ---------------------------- */
+}
+
+/* Mobile */
+@media screen and (max-width: 432) {
+  /* ---------------------------- HEADER ---------------------------- */
+
+  /* ----------------------------- MAIN ----------------------------- */
+
+  /* ---------------------------- FOOTER ---------------------------- */
+}
