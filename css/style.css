@@ -244,39 +244,45 @@
 
   /* ---------------------------- FOOTER ---------------------------- */
   .page-footer__container {
-    background-color: rgb(36, 39, 112);
+    background-color: #0E2E4E;
     padding-top: 1rem;
     margin-top: 1rem;
+    color: white;
   }
 
   .page-footer {
     display: grid;
     margin: 0 auto;
-    max-width: 77%;
+    max-width: 76%;
     grid-template-areas:
       "bio bio bio bio"
       "about social-media mastodon socials"
       "about social-media mastodon socials";
     grid-template-rows: 0.5fr 1fr 1fr;
-    grid-template-columns: 1.2fr 1fr 1.6fr 1fr;
+    grid-template-columns: 1fr 0.8fr 1.3fr 0.52fr;
     box-sizing: border-box;
   }
 
   /* --------------- Bio --------------- */
+  .bio-portrait__image{
+    border-radius: 50%;
+  }
+
   .page-footer-section__bio {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+    /* background-color: rgb(235, 135, 135); */
+    /* border: 1px solid black; */
     grid-area: bio;
   }
 
   .page-footer-section__bio-inner {
-    background-color: rgb(202, 174, 227);
+    /* background-color: rgb(202, 174, 227); */
     display: grid;
     box-sizing: border-box;
     margin: 10px;
     height: 90%;
     width: 70%;
-    padding-left: 10%;
+    padding-left: 5%;
+    gap: 1.5rem;
     grid-template-columns: 120px auto;
   }
 
@@ -293,13 +299,13 @@
 
   /* --------------- About --------------- */
   .page-footer > .page-footer-section__about {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+    /* background-color: rgb(235, 135, 135); */
+    /* border: 1px solid black; */
     grid-area: about;
   }
 
   .page-footer-section__about-inner {
-    background-color: rgb(202, 174, 227);
+    /* background-color: rgb(202, 174, 227); */
     display: grid;
     margin: 10px;
   }
@@ -307,13 +313,13 @@
   /* --------------- Social Media (Instagram) --------------- */
 
   .page-footer-section__social-media {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+    /* background-color: rgb(235, 135, 135); */
+    /* border: 1px solid black; */
     grid-area: social-media;
   }
 
   .page-footer-section__social-media-inner {
-    background-color: rgb(202, 174, 227);
+    /* background-color: rgb(202, 174, 227); */
     margin: 10px;
   }
 
@@ -332,14 +338,14 @@
   /* --------------- Mastodon --------------- */
 
   .page-footer-section__mastodon {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+    /* background-color: rgb(235, 135, 135); */
+    /* border: 1px solid black; */
     grid-area: mastodon;
     font-size: 0.85rem;
   }
 
   .page-footer-section__mastodon-inner {
-    background-color: rgb(202, 174, 227);
+    /* background-color: rgb(202, 174, 227); */
     display: grid;
     margin: 10px;
   }
@@ -347,13 +353,13 @@
   /* --------------- Socials (Track us!) --------------- */
 
   .page-footer-section__socials {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+    /* background-color: rgb(235, 135, 135); */
+    /* border: 1px solid black; */
     grid-area: socials;
   }
 
   .page-footer-section__socials-inner {
-    background-color: rgb(202, 174, 227);
+    /* background-color: rgb(202, 174, 227); */
     margin: 10px;
   }
 
@@ -361,14 +367,44 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .social-link__button{
     width: 32px;
     height: 32px;
   }
+
+  .social-email{
+    position: relative;
+  }
   
-  
+  .social-email-input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    height: 32px;
+    border-radius: 7px;
+    font-size: 0.6rem;
+  }
+
+  .social-email-submit__button {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    background-color: #FFB901;
+    border: none;
+    border-radius: 20%;
+
+    position: absolute;
+    right: 0;
+  }
+
+  .social-email-submit__icon{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
 }
 
 /* Tablet */
