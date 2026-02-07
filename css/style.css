@@ -247,13 +247,15 @@
     background-color: #0E2E4E;
     padding-top: 1rem;
     margin-top: 1rem;
+    margin-left: -160px;
+    margin-right: -160px;
     color: white;
   }
 
   .page-footer {
     display: grid;
     margin: 0 auto;
-    max-width: 76%;
+    max-width: 63%;
     grid-template-areas:
       "bio bio bio bio"
       "about social-media mastodon socials"
