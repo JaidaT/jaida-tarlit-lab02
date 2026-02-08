@@ -1,5 +1,5 @@
 /* Desktop */
-@media screen and (min-width: 633px) {
+@media screen and (min-width: 1300px) {
   /* ---------------------------- HEADER ---------------------------- */
 
   .page-header {
@@ -414,7 +414,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 433) and (max-width: 632) {
+@media screen and (min-width: 600) and (max-width: 1299) {
   /* ---------------------------- HEADER ---------------------------- */
 
   /* ----------------------------- MAIN ----------------------------- */
@@ -423,7 +423,7 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 432) {
+@media screen and (max-width: 599) {
   /* ---------------------------- HEADER ---------------------------- */
 
   /* ----------------------------- MAIN ----------------------------- */
