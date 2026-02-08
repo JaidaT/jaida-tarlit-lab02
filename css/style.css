@@ -1,35 +1,35 @@
-/* Desktop */
-@media screen and (min-width: 1300px) {
-  /* ---------------------------- HEADER ---------------------------- */
+/* -------------------------------------------- UNIVERSAL START ---------------------------------- */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+.text-highlight--light-blue {
+    color: rgba(30, 175, 222, 1);
+  }
 
-  .page-header {
+/* ---------------------------- UNI. HEADER START ---------------------------- */
+/* Header universal */
+
+
+.page-header {
     background-color: whitesmoke;
-    display: grid;
-    grid-template-rows: 1fr;
     height: 100%;
-    width: auto;
-    gap: 20px;
+    width: 100%;
   }
 
   .page-header__logo {
     display: flex;
-    align-items: flex-end;
-    flex-direction: row;
     font-size: 36px;
     font-weight: bold;
+    gap: 10px;
+    align-items: center;
   }
 
   .page-header__inner {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-content: space-between;
+    
   }
 
   .page-header__nav {
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    width: 100%;
   }
 
   .nav-button {
@@ -40,21 +40,31 @@
 
   .page-banner {
     height: 40rem;
-    display: flex;
+    display: none;
     align-items: flex-end;
     background-image: url("https://placehold.co/1466x531");
   }
 
+  img{
+    width: 100%;
+  }
+
   .page-banner__flags {
+    position: absolute;
     margin-bottom: 16rem;
     margin-left: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .page-banner__flag {
     margin-top: 6px;
     padding: 1rem;
     list-style: none;
-    background-color: #ffffff;
+    background-color: #EDF4FB;
   }
 
   .page-banner__flag--dark-blue {
@@ -80,26 +90,259 @@
   }
 
   .nav-button--green {
-    background-color: green;
+    background-color:#25C389;
+    color: white;
+    font-size: large;
+    display: flex;
+    text-align: left;
+  }
+
+  .nav-button--yellow {
+    background-color:#FFB901;
+    color: white;
+    font-size: large;
+      display: flex;
+    text-align: left;
+  }
+  .nav-button--red {
+    background-color: #DE6262;
+    color: white;
+    font-size: large;
+    text-align: left;
+      display: flex;
+  }
+
+  .nav-button--light-blue {
+    background-color:  #19B2DE;
+    color: white;
+    font-size: large;
+      display: flex;
+    text-align: left;
+  }
+
+  .nav-button--dark-blue {
+    background-color:  #265787;
+    color: white;
+    font-size: large;
+      display: flex;
+    text-align: left;
+  }
+/* ---------------------------- UNI. HEADER END ---------------------------- */
+
+/* ----------------------------- UNI. MAIN START ----------------------------- */
+
+/*intro*/
+  
+.page-section-header {
+    text-align: center;
+}
+
+/*services*/
+
+.page-section {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.blog-entry-heading,
+.blog-entry-tags,
+.blog-entry-date {
+    color: rgba(255, 255, 255, 1);
+}
+
+/*blog*/
+
+
+.blog-entry {
+    position: relative;
+    display: flex;
+}
+
+.blog-entry-date {
+    text-align: center;
+    position: absolute;
+    background-color: rgba(216, 96, 95, 1);
+    padding: 0.5rem;
+    width: 30%;
+    height: 20%;
+    font-size: 1.5vw;
+}
+
+.blog-entry-heading {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.5vw;
+}
+
+.blog-entry-tags {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3vw;
+}
+
+.blog-entry__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-entry-desc {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(25, 178, 222, 1);
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.blog-entry__icon {
+    position: absolute;
+    width: 10%;
+    height: 35%;
+    right: 5%;
+    background-color: rgba(21, 150, 189, 1);
+}
+
+/*portfolio*/
+
+
+.project-entry__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*clients*/
+
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 1);
+}
+
+.client-logo_image {
+    width: 90%;
+}
+/* ----------------------------- UNI. MAIN END ----------------------------- */
+
+/* --------------------------- UNI. FOOTER START --------------------------- */
+
+/* --------------------------- UNI. FOOTER START --------------------------- */
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* -------------------------------------------- UNIVERSAL END ---------------------------------- */
+
+/* Desktop */
+@media screen and (min-width: 1300px) {
+  /* ---------------------------- HEADER ---------------------------- */
+
+  .page-header__svglogo{
+    margin-top: 10px;
+  }
+
+  .page-header__logo {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    font-weight: bold;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .page-header__inner {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    padding-top : 50px;
+  }
+
+  .page-banner {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("https://placehold.co/1466x531");
+  }
+
+  .page-banner__flags {
+    position: absolute;
+    margin-bottom: 16rem;
+    margin-left: 3rem;
+    padding-top: 150px;
+  }
+
+  .page-banner__flag {
+    margin-top: 6px;
+    padding: 1rem;
+    list-style: none;
+    background-color: #EDF4FB;
+  }
+
+  .page-banner__flag--dark-blue {
+    border-left: 4px solid darkblue;
+  }
+
+  .page-banner__flag--red {
+    border-left: 4px solid red;
+  }
+
+  .page-banner__flag--yellow {
+    border-left: 4px solid yellow;
+  }
+
+  .nav-button {
+    border: none;
+    padding-top: 30px;
+  }
+
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-button--green {
+    background-color: #25C389;
     color: white;
   }
 
   .nav-button--yellow {
-    background-color: yellow;
+    background-color: #FFB901;
     color: white;
   }
   .nav-button--red {
-    background-color: red;
+    background-color: #DE6262;
     color: white;
   }
 
   .nav-button--light-blue {
-    background-color: lightblue;
+    background-color: #19B2DE;
     color: white;
   }
 
   .nav-button--dark-blue {
-    background-color: darkblue;
+    background-color: #265787;
     color: white;
   }
 
@@ -107,142 +350,83 @@
 
   /*intro*/
 
-  .text-highlight--light-blue {
-    color: rgba(30, 175, 222, 1);
-  }
+    /*services*/
 
-  .page-section-header {
-    place-self: center;
-    text-align: center;
-    grid-column: 1 / -1;
-  }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+    }
 
-  .page-section {
-    grid-column: 2 / 3;
-  }
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-  /*services*/
+    .service-desc {
+        text-align: left;
+        font-size: 1vw;
+    }
 
-  .page-section__services-inner {
-    display: grid;
-    row-gap: 2rem;
-  }
+    .service__icon {
+        width: 30%;
+    }
 
-  .services {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1rem;
-  }
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .service {
-    text-align: center;
-  }
 
-  .service-desc {
-    text-align: left;
-  }
+    /*blog*/
 
-  /*blog*/
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
 
-  .page-section__blog-inner {
-    display: grid;
-    row-gap: 2rem;
-  }
 
-  .blog {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
-  }
+    /*portfolio*/
 
-  .blog-entry {
-    position: relative;
-  }
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
 
-  .blog-entry-date {
-    text-align: center;
-    position: absolute;
-    background-color: rgba(216, 96, 95, 1);
-    padding: 0.5rem;
-  }
+    /*clients*/
 
-  .blog-entry-heading,
-  .blog-entry-tags {
-    margin-top: 1rem;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-  }
+    .client-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 2rem;
+    }
 
-  .blog-entry-desc {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(25, 178, 222, 1);
-    padding-left: 1rem;
-  }
 
-  .blog-entry__image {
-    width: 100%;
-  }
 
-  .blog-entry__icon {
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    right: 1rem;
-    align: auto;
-    background-color: rgba(21, 150, 189, 1);
-  }
 
-  /*portfolio*/
+    /* Container sizing */
 
-  .page-section__portfolio-inner {
-    display: grid;
-    row-gap: 2rem;
-  }
+    .page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
-    row-gap: 3rem;
-  }
+    /* 
+    .page-content {
+        display: grid;
+        grid-template-columns: 209px 1fr 209px;
+        grid-template-rows: auto;
+        row-gap: 2rem;
+    } 
+    */
 
-  /*clients*/
-
-  .page-section__clients-inner {
-    display: grid;
-    row-gap: 2rem;
-  }
-
-  .client-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 2rem;
-  }
-
-  .client {
-    background-color: rgba(243, 243, 243, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Container sizing */
-
-  .page {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .page-content {
-    display: grid;
-    grid-template-columns: 209px 1fr 209px;
-    grid-template-rows: auto;
-    row-gap: 2rem;
-  }
-
-  /* ---------------------------- FOOTER ---------------------------- */
+    /* ---------------------------- FOOTER ---------------------------- */
   .page-footer__container {
     background-color: #0E2E4E;
     padding-top: 1rem;
@@ -396,22 +580,185 @@
     height: 50%;
     object-fit: cover;
   }
+  
 }
 
+
 /* Tablet */
-@media screen and (min-width: 600) and (max-width: 1299) {
-  /* ---------------------------- HEADER ---------------------------- */
+@media screen and (min-width: 600px) and (max-width: 1299px) {
+    /* ---------------------------- HEADER ---------------------------- */
+    .page-header__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+    .page-banner {
+    display: flex;
+  }
+    .page-banner__flags {
+    position: absolute;
+    margin-left: 3rem;
+    padding-top: 10px;
+  }
+    /* ----------------------------- MAIN ----------------------------- */
 
-  /* ----------------------------- MAIN ----------------------------- */
+    /*intro*/
 
-  /* ---------------------------- FOOTER ---------------------------- */
+    /*services*/
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+
+    .service__icon {
+        width: 205;
+        height: auto;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-desc {
+        text-align: left;
+        font-size: 2vw;
+    }
+
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*blog*/
+
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+        column-gap: 3rem;
+    }
+
+    .blog :first-child {
+        grid-column: 1 / -1;
+    }
+
+    /*portfolio*/
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+
+    /*clients*/
+
+    .client-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    /* Container sizing */
+
+    .page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* ---------------------------- FOOTER ---------------------------- */
+  
 }
 
 /* Mobile */
-@media screen and (max-width: 599) {
-  /* ---------------------------- HEADER ---------------------------- */
+@media screen and (max-width: 599px) {
+    /* ---------------------------- HEADER ---------------------------- */
+  .page-header__nav {
+    display: none;
+  }
+    /* ----------------------------- MAIN ----------------------------- */
 
-  /* ----------------------------- MAIN ----------------------------- */
+    /*intro*/
 
-  /* ---------------------------- FOOTER ---------------------------- */
+    /*services*/
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-desc {
+        text-align: left;
+        font-size: 2.5w;
+        padding-left: 1rem;
+        margin-top: 0%;
+    }
+
+    .service-heading {
+        align-self: flex-start;
+        padding-left: 1rem;
+    }
+
+    .service__icon {
+        width: 20%;
+    }
+
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*blog*/
+
+    .blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+
+    .blog-entry-date {
+        font-size: 5vw;
+    }
+
+    .blog-entry-heading {
+        font-size: 5vw;
+    }
+
+    .blog-entry-tags {
+        font-size: 4vw;
+    }
+
+    /*portfolio*/
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+
+    /*clients*/
+    .page-section__clients {
+        display: none;
+    }
+
+    /* ---------------------------- FOOTER ---------------------------- */
+  
 }
