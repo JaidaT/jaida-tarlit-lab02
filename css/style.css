@@ -232,6 +232,10 @@
 }
 /* ----------------------------- UNI. MAIN END ----------------------------- */
 
+/* --------------------------- UNI. FOOTER START --------------------------- */
+
+/* --------------------------- UNI. FOOTER START --------------------------- */
+
 
 
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
@@ -423,123 +427,162 @@
     */
 
     /* ---------------------------- FOOTER ---------------------------- */
-    .page-footer__container {
-        background-color: rgb(190, 232, 232);
-    }
+  .page-footer__container {
+    background-color: #0E2E4E;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-left: -160px;
+    margin-right: -160px;
+    color: white;
+  }
 
-    .page-footer {
-        display: grid;
-        margin: 0 auto;
-        padding-left: 10rem;
-        padding-right: 10rem;
-        /* height: 795px; */
-        grid-template-areas:
-            "bio bio bio bio"
-            "about social-media mastodon socials"
-            "about social-media mastodon socials";
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1.3fr 0.7fr;
-        box-sizing: border-box;
-    }
+  .page-footer {
+    display: grid;
+    margin: 0 auto;
+    max-width: 63%;
+    grid-template-areas:
+      "bio bio bio bio"
+      "about social-media mastodon socials"
+      "about social-media mastodon socials";
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-columns: 1fr 0.8fr 1.3fr 0.52fr;
+    box-sizing: border-box;
+  }
 
-    /* --------------- Bio --------------- */
-    .page-footer>.page-footer-section__bio {
-        background-color: rgb(235, 135, 135);
-        border: 1px solid black;
-        grid-area: bio;
-    }
+  /* --------------- Bio --------------- */
+  .bio-portrait__image{
+    border-radius: 50%;
+  }
 
-    .page-footer-section__bio-inner {
-        background-color: rgb(202, 174, 227);
-        display: grid;
-        box-sizing: border-box;
-        margin: 10px;
-        height: 90%;
-        width: 65%;
-        grid-template-columns: 120px auto;
-    }
+  .page-footer-section__bio {
+    grid-area: bio;
+  }
 
-    .page-footer-divider {
-        position: absolute;
-        border: none;
-        height: 3px;
-        background-color: black;
-        width: 50%;
-        z-index: 5;
-        margin-top: 17.5rem;
-    }
+  .page-footer-section__bio-inner {
+    display: grid;
+    box-sizing: border-box;
+    margin: 10px;
+    height: 90%;
+    width: 70%;
+    padding-left: 5%;
+    gap: 1.5rem;
+    grid-template-columns: 120px auto;
+  }
 
-    /* --------------- About --------------- */
-    .page-footer>.page-footer-section__about {
-        background-color: rgb(235, 135, 135);
-        border: 1px solid black;
-        grid-area: about;
-    }
+  .page-footer-divider {
+    display: none;
+    position: absolute;
+    border: none;
+    height: 3px;
+    background-color: black;
+    width: 50%;
+    z-index: 5;
+    margin-top: 17.5rem;
+  }
 
-    .page-footer-section__about-inner {
-        background-color: rgb(202, 174, 227);
-        display: grid;
-        margin: 10px;
-    }
+  /* --------------- About --------------- */
+  .page-footer-section__about {
+    grid-area: about;
+  }
 
-    /* --------------- Social Media (Instagram) --------------- */
+  .page-footer-section__about-inner {
+    display: grid;
+  }
 
-    .page-footer>.page-footer-section__social-media {
-        background-color: rgb(235, 135, 135);
-        border: 1px solid black;
-        grid-area: social-media;
-    }
+  /* --------------- Social Media (Instagram) --------------- */
 
-    .page-footer-section__social-media-inner {
-        background-color: rgb(202, 174, 227);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* grid-auto-rows: 64px; */
-        margin: 10px;
-    }
+  .page-footer-section__social-media {
+    grid-area: social-media;
+  }
 
-    .page-footer-section-heading {
-        grid-column: span 3;
-    }
+  .page-footer-section__social-media-inner {
+    margin: 10px;
+  }
 
-    .post,
-    .social.media-post-link {
-        height: 64px;
-        width: 64px;
-        grid-column: 1;
-    }
+  .social-media-posts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
 
-    /* --------------- Mastodon --------------- */
+  .post,
+  .social.media-post-link {
+    height: 64px;
+    width: 64px;
+  }
 
-    .page-footer>.page-footer-section__mastodon {
-        background-color: rgb(235, 135, 135);
-        border: 1px solid black;
-        grid-area: mastodon;
-        font-size: 0.85rem;
-    }
+  /* --------------- Mastodon --------------- */
 
-    .page-footer-section__mastodon-inner {
-        background-color: rgb(202, 174, 227);
-        display: grid;
-        margin: 10px;
-    }
+  .page-footer-section__mastodon {
+    grid-area: mastodon;
+  }
 
-    /* --------------- Socials (Track us!) --------------- */
+  .page-footer-section__mastodon-inner {
+    display: grid;
+    margin: 10px;
+  }
 
-    .page-footer>.page-footer-section__socials {
-        background-color: rgb(235, 135, 135);
-        border: 1px solid black;
-        grid-area: socials;
-    }
+  .mastodon-toots{
+    font-size: 0.85rem;
+  }
 
-    .page-footer-section__socials-inner {
-        background-color: rgb(202, 174, 227);
-        display: grid;
-        margin: 10px;
-    }
+  /* --------------- Socials (Track us!) --------------- */
+
+  .page-footer-section__socials {
+    grid-area: socials;
+  }
+
+  .page-footer-section__socials-inner {
+    margin: 10px;
+  }
+
+  .social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+        padding-top: 1rem;
+  }
+
+  .social-link__button{
+    width: 32px;
+    height: 32px;
+  }
+
+  .social-email{
+    position: relative;
+  }
+  
+  .social-email-input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    height: 32px;
+    border-radius: 7px;
+    font-size: 0.6rem;
+  }
+
+  .social-email-submit__button {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    background-color: #FFB901;
+    border: none;
+    border-radius: 20%;
+
+    position: absolute;
+    right: 0;
+  }
+
+  .social-email-submit__icon{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
 }
 
-  
 
 /* Tablet */
 @media screen and (min-width: 600px) and (max-width: 1299px) {
@@ -630,6 +673,7 @@
     }
 
     /* ---------------------------- FOOTER ---------------------------- */
+  
 }
 
 /* Mobile */
@@ -716,4 +760,5 @@
     }
 
     /* ---------------------------- FOOTER ---------------------------- */
+  
 }
