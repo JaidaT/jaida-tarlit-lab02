@@ -1,35 +1,32 @@
-/* Desktop */
-@media screen and (min-midth: 633px) {
-  /* ---------------------------- HEADER ---------------------------- */
 
-  .page-header {
+/* Header universal */
+.text-highlight--light-blue {
+    color: rgba(30, 175, 222, 1);
+
+  }
+
+.page-header {
     background-color: whitesmoke;
-    display: grid;
-    grid-template-rows: 1fr;
     height: 100%;
-    width: auto;
-    gap: 20px;
+    width: 100%;
   }
 
   .page-header__logo {
     display: flex;
-    align-items: flex-end;
-    flex-direction: row;
     font-size: 36px;
     font-weight: bold;
+    gap: 10px;
+    align-items: center;
   }
 
   .page-header__inner {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-content: space-between;
+    
   }
 
   .page-header__nav {
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    width: 100%;
   }
 
   .nav-button {
@@ -40,21 +37,31 @@
 
   .page-banner {
     height: 40rem;
-    display: flex;
+    display: none;
     align-items: flex-end;
     background-image: url("https://placehold.co/1466x531");
   }
 
+  img{
+    width: 100%;
+  }
+
   .page-banner__flags {
+    position: absolute;
     margin-bottom: 16rem;
     margin-left: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .page-banner__flag {
     margin-top: 6px;
     padding: 1rem;
     list-style: none;
-    background-color: #ffffff;
+    background-color: #EDF4FB;
   }
 
   .page-banner__flag--dark-blue {
@@ -80,26 +87,147 @@
   }
 
   .nav-button--green {
-    background-color: green;
+    background-color:#25C389;
+    color: white;
+    font-size: large;
+    display: flex;
+    text-align: left;
+  }
+
+  .nav-button--yellow {
+    background-color:#FFB901;
+    color: white;
+    font-size: large;
+      display: flex;
+    text-align: left;
+  }
+  .nav-button--red {
+    background-color: #DE6262;
+    color: white;
+    font-size: large;
+    text-align: left;
+      display: flex;
+    text-align: left;
+  }
+
+  .nav-button--light-blue {
+    background-color:  #19B2DE;
+    color: white;
+    font-size: large;
+      display: flex;
+    text-align: left;
+  }
+
+  .nav-button--dark-blue {
+    background-color:  #265787;
+    color: white;
+    font-size: large;
+      display: flex;
+    text-align: left;
+  }
+
+/* Desktop */
+@media screen and (min-width: 1300px) {
+  /* ---------------------------- HEADER ---------------------------- */
+
+  .page-header__svglogo{
+    margin-top: 10px;
+  }
+
+  .page-header__logo {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    font-weight: bold;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .page-header__inner {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    padding-top : 50px;
+  }
+
+  .page-banner {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("https://placehold.co/1466x531");
+  }
+
+  .page-banner__flags {
+    position: absolute;
+    margin-bottom: 16rem;
+    margin-left: 3rem;
+    padding-top: 150px;
+  }
+
+  .page-banner__flag {
+    margin-top: 6px;
+    padding: 1rem;
+    list-style: none;
+    background-color: #EDF4FB;
+  }
+
+  .page-banner__flag--dark-blue {
+    border-left: 4px solid darkblue;
+  }
+
+  .page-banner__flag--red {
+    border-left: 4px solid red;
+  }
+
+  .page-banner__flag--yellow {
+    border-left: 4px solid yellow;
+  }
+
+  .nav-button {
+    border: none;
+    padding-top: 30px;
+  }
+
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-button--green {
+    background-color: #25C389;
     color: white;
   }
 
   .nav-button--yellow {
-    background-color: yellow;
+    background-color: #FFB901;
     color: white;
   }
   .nav-button--red {
-    background-color: red;
+    background-color: #DE6262;
     color: white;
   }
 
   .nav-button--light-blue {
-    background-color: lightblue;
+    background-color: #19B2DE;
     color: white;
   }
 
   .nav-button--dark-blue {
-    background-color: darkblue;
+    background-color: #265787;
     color: white;
   }
 
@@ -359,19 +487,34 @@
   }
 }
 
-/* Tablet */
-@media screen and (min-width: 433) and (max-width: 632) {
-  /* ---------------------------- HEADER ---------------------------- */
+  
 
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1299px) {
+  /* ---------------------------- HEADER ---------------------------- */
+    .page-header__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+    .page-banner {
+    display: flex;
+  }
+  .page-banner__flags {
+    position: absolute;
+    margin-left: 3rem;
+    padding-top: 10px;
+  }
   /* ----------------------------- MAIN ----------------------------- */
 
   /* ---------------------------- FOOTER ---------------------------- */
 }
 
 /* Mobile */
-@media screen and (max-width: 432) {
+@media screen and (max-width: 599px) {
   /* ---------------------------- HEADER ---------------------------- */
-
+  .page-header__nav {
+    display: none;
+  }
   /* ----------------------------- MAIN ----------------------------- */
 
   /* ---------------------------- FOOTER ---------------------------- */
