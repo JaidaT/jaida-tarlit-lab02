@@ -1,9 +1,12 @@
-
-/* Header universal */
+/* -------------------------------------------- UNIVERSAL START ---------------------------------- */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
 .text-highlight--light-blue {
     color: rgba(30, 175, 222, 1);
-
   }
+
+/* ---------------------------- UNI. HEADER START ---------------------------- */
+/* Header universal */
+
 
 .page-header {
     background-color: whitesmoke;
@@ -110,7 +113,6 @@
     font-size: large;
     text-align: left;
       display: flex;
-    text-align: left;
   }
 
   .nav-button--light-blue {
@@ -128,6 +130,119 @@
       display: flex;
     text-align: left;
   }
+/* ---------------------------- UNI. HEADER END ---------------------------- */
+
+/* ----------------------------- UNI. MAIN START ----------------------------- */
+
+/*intro*/
+  
+.page-section-header {
+    text-align: center;
+}
+
+/*services*/
+
+.page-section {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.blog-entry-heading,
+.blog-entry-tags,
+.blog-entry-date {
+    color: rgba(255, 255, 255, 1);
+}
+
+/*blog*/
+
+
+.blog-entry {
+    position: relative;
+    display: flex;
+}
+
+.blog-entry-date {
+    text-align: center;
+    position: absolute;
+    background-color: rgba(216, 96, 95, 1);
+    padding: 0.5rem;
+    width: 30%;
+    height: 20%;
+    font-size: 1.5vw;
+}
+
+.blog-entry-heading {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.5vw;
+}
+
+.blog-entry-tags {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3vw;
+}
+
+.blog-entry__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-entry-desc {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(25, 178, 222, 1);
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.blog-entry__icon {
+    position: absolute;
+    width: 10%;
+    height: 35%;
+    right: 5%;
+    background-color: rgba(21, 150, 189, 1);
+}
+
+/*portfolio*/
+
+
+.project-entry__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*clients*/
+
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 1);
+}
+
+.client-logo_image {
+    width: 90%;
+}
+/* ----------------------------- UNI. MAIN END ----------------------------- */
+
+/* --------------------------- UNI. FOOTER START --------------------------- */
+
+/* --------------------------- UNI. FOOTER START --------------------------- */
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* -------------------------------------------- UNIVERSAL END ---------------------------------- */
 
 /* Desktop */
 @media screen and (min-width: 1300px) {
@@ -238,179 +353,127 @@
 
   /*intro*/
 
-  .text-highlight--light-blue {
-    color: rgba(30, 175, 222, 1);
-  }
+    /*services*/
 
-  .page-section-header {
-    place-self: center;
-    text-align: center;
-    grid-column: 1 / -1;
-  }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+    }
 
-  .page-section {
-    grid-column: 2 / 3;
-  }
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-  /*services*/
+    .service-desc {
+        text-align: left;
+        font-size: 1vw;
+    }
 
-  .page-section__services-inner {
-    display: grid;
-    row-gap: 2rem;
-  }
+    .service__icon {
+        width: 30%;
+    }
 
-  .services {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1rem;
-  }
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .service {
-    text-align: center;
-  }
 
-  .service-desc {
-    text-align: left;
-  }
+    /*blog*/
 
-  /*blog*/
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
 
-  .page-section__blog-inner {
-    display: grid;
-    row-gap: 2rem;
-  }
 
-  .blog {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
-  }
+    /*portfolio*/
 
-  .blog-entry {
-    position: relative;
-  }
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
 
-  .blog-entry-date {
-    text-align: center;
-    position: absolute;
-    background-color: rgba(216, 96, 95, 1);
-    padding: 0.5rem;
-  }
+    /*clients*/
 
-  .blog-entry-heading,
-  .blog-entry-tags {
-    margin-top: 1rem;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-  }
+    .client-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 2rem;
+    }
 
-  .blog-entry-desc {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(25, 178, 222, 1);
-    padding-left: 1rem;
-  }
 
-  .blog-entry__image {
-    width: 100%;
-  }
 
-  .blog-entry__icon {
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    right: 1rem;
-    align: auto;
-    background-color: rgba(21, 150, 189, 1);
-  }
 
-  /*portfolio*/
+    /* Container sizing */
 
-  .page-section__portfolio-inner {
-    display: grid;
-    row-gap: 2rem;
-  }
+    .page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
-    row-gap: 3rem;
-  }
+    /* 
+    .page-content {
+        display: grid;
+        grid-template-columns: 209px 1fr 209px;
+        grid-template-rows: auto;
+        row-gap: 2rem;
+    } 
+    */
 
-  /*clients*/
-
-  .page-section__clients-inner {
-    display: grid;
-    row-gap: 2rem;
-  }
-
-  .client-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 2rem;
-  }
-
-  .client {
-    background-color: rgba(243, 243, 243, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Container sizing */
-
-  .page {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .page-content {
-    display: grid;
-    grid-template-columns: 209px 1fr 209px;
-    grid-template-rows: auto;
-    row-gap: 2rem;
-  }
-
-  /* ---------------------------- FOOTER ---------------------------- */
+    /* ---------------------------- FOOTER ---------------------------- */
   .page-footer__container {
-    background-color: rgb(190, 232, 232);
+    background-color: #0E2E4E;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-left: -160px;
+    margin-right: -160px;
+    color: white;
   }
 
   .page-footer {
     display: grid;
     margin: 0 auto;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    /* height: 795px; */
+    max-width: 63%;
     grid-template-areas:
       "bio bio bio bio"
       "about social-media mastodon socials"
       "about social-media mastodon socials";
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1.3fr 0.7fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-columns: 1fr 0.8fr 1.3fr 0.52fr;
     box-sizing: border-box;
   }
 
   /* --------------- Bio --------------- */
-  .page-footer > .page-footer-section__bio {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+  .bio-portrait__image{
+    border-radius: 50%;
+  }
+
+  .page-footer-section__bio {
     grid-area: bio;
   }
 
   .page-footer-section__bio-inner {
-    background-color: rgb(202, 174, 227);
     display: grid;
     box-sizing: border-box;
     margin: 10px;
     height: 90%;
-    width: 65%;
+    width: 70%;
+    padding-left: 5%;
+    gap: 1.5rem;
     grid-template-columns: 120px auto;
   }
 
   .page-footer-divider {
+    display: none;
     position: absolute;
     border: none;
     height: 3px;
@@ -421,80 +484,112 @@
   }
 
   /* --------------- About --------------- */
-  .page-footer > .page-footer-section__about {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+  .page-footer-section__about {
     grid-area: about;
   }
 
   .page-footer-section__about-inner {
-    background-color: rgb(202, 174, 227);
     display: grid;
-    margin: 10px;
   }
 
   /* --------------- Social Media (Instagram) --------------- */
 
-  .page-footer > .page-footer-section__social-media {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+  .page-footer-section__social-media {
     grid-area: social-media;
   }
 
   .page-footer-section__social-media-inner {
-    background-color: rgb(202, 174, 227);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-auto-rows: 64px; */
     margin: 10px;
   }
 
-  .page-footer-section-heading {
-    grid-column: span 3;
+  .social-media-posts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
   }
 
   .post,
   .social.media-post-link {
     height: 64px;
     width: 64px;
-    grid-column: 1;
   }
 
   /* --------------- Mastodon --------------- */
 
-  .page-footer > .page-footer-section__mastodon {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+  .page-footer-section__mastodon {
     grid-area: mastodon;
-    font-size: 0.85rem;
   }
 
   .page-footer-section__mastodon-inner {
-    background-color: rgb(202, 174, 227);
     display: grid;
     margin: 10px;
+  }
+
+  .mastodon-toots{
+    font-size: 0.85rem;
   }
 
   /* --------------- Socials (Track us!) --------------- */
 
-  .page-footer > .page-footer-section__socials {
-    background-color: rgb(235, 135, 135);
-    border: 1px solid black;
+  .page-footer-section__socials {
     grid-area: socials;
   }
 
   .page-footer-section__socials-inner {
-    background-color: rgb(202, 174, 227);
-    display: grid;
     margin: 10px;
   }
+
+  .social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+        padding-top: 1rem;
+  }
+
+  .social-link__button{
+    width: 32px;
+    height: 32px;
+  }
+
+  .social-email{
+    position: relative;
+  }
+  
+  .social-email-input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    height: 32px;
+    border-radius: 7px;
+    font-size: 0.6rem;
+  }
+
+  .social-email-submit__button {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    background-color: #FFB901;
+    border: none;
+    border-radius: 20%;
+
+    position: absolute;
+    right: 0;
+  }
+
+  .social-email-submit__icon{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
 }
 
-  
 
 /* Tablet */
 @media screen and (min-width: 600px) and (max-width: 1299px) {
-  /* ---------------------------- HEADER ---------------------------- */
+    /* ---------------------------- HEADER ---------------------------- */
     .page-header__inner {
     flex-direction: column;
     align-items: center;
@@ -510,18 +605,166 @@
         margin-bottom: 0;
         margin-left: 0;
   }
-  /* ----------------------------- MAIN ----------------------------- */
+    /* ----------------------------- MAIN ----------------------------- */
 
-  /* ---------------------------- FOOTER ---------------------------- */
+    /*intro*/
+
+    /*services*/
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+
+    .service__icon {
+        width: 205;
+        height: auto;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-desc {
+        text-align: left;
+        font-size: 2vw;
+    }
+
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*blog*/
+
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+        column-gap: 3rem;
+    }
+
+    .blog :first-child {
+        grid-column: 1 / -1;
+    }
+
+    /*portfolio*/
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+
+    /*clients*/
+
+    .client-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    /* Container sizing */
+
+    .page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* ---------------------------- FOOTER ---------------------------- */
+  
 }
 
 /* Mobile */
 @media screen and (max-width: 599px) {
-  /* ---------------------------- HEADER ---------------------------- */
+    /* ---------------------------- HEADER ---------------------------- */
   .page-header__nav {
     display: none;
   }
-  /* ----------------------------- MAIN ----------------------------- */
+    /* ----------------------------- MAIN ----------------------------- */
 
-  /* ---------------------------- FOOTER ---------------------------- */
+    /*intro*/
+
+    /*services*/
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-desc {
+        text-align: left;
+        font-size: 2.5w;
+        padding-left: 1rem;
+        margin-top: 0%;
+    }
+
+    .service-heading {
+        align-self: flex-start;
+        padding-left: 1rem;
+    }
+
+    .service__icon {
+        width: 20%;
+    }
+
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*blog*/
+
+    .blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+
+    .blog-entry-date {
+        font-size: 5vw;
+    }
+
+    .blog-entry-heading {
+        font-size: 5vw;
+    }
+
+    .blog-entry-tags {
+        font-size: 4vw;
+    }
+
+    /*portfolio*/
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+
+    /*clients*/
+    .page-section__clients {
+        display: none;
+    }
+
+    /* ---------------------------- FOOTER ---------------------------- */
+  
 }
