@@ -42,7 +42,10 @@
     height: 40rem;
     display: none;
     align-items: flex-end;
-    background-image: url("https://placehold.co/1466x531");
+    background-image: url("/banner\ 1.png"); 
+    background-position: center;  
+    background-size: contain;      
+    width: 100%;
   }
 
   img{
@@ -282,15 +285,15 @@
     height: 40rem;
     width: 100%;
     display: flex;
-    align-items: flex-end;
-    background-image: url("https://placehold.co/1466x531");
+    align-items: flex-start;
+    background-image: url("/banner\ 1.png");
   }
 
   .page-banner__flags {
     position: absolute;
-    margin-bottom: 16rem;
+    margin-bottom: 8rem;
     margin-left: 3rem;
-    padding-top: 150px;
+    padding-top: 250px;
   }
 
   .page-banner__flag {
@@ -594,10 +597,13 @@
     .page-banner {
     display: flex;
   }
-    .page-banner__flags {
-    position: absolute;
-    margin-left: 3rem;
-    padding-top: 10px;
+  .page-banner__flags {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-125%, -90%);
+        margin-bottom: 0;
+        margin-left: 0;
   }
     /* ----------------------------- MAIN ----------------------------- */
 
